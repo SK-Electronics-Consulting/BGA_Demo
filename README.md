@@ -16,12 +16,13 @@ alternates or already in-stock parts (JLC, I'm looking at you!).
 ## Assumptions
 
 1. Through hole components will be not populated.
+1. Only top layer will be populated. Placing components on both sides increases cost. The types of projects that would require BGAs and double sided placement, would also really require a deeper CM relationship than what JLC/PCBWay provide.
 
 ## Scope
 
 Items that are out of scope for this project:
 
-1. Unrelated costs and delays, such as delays due to Lunar New Year or parts that are exceptionally difficult to source. 
+1. Unrelated costs and delays, such as delays due to Lunar New Year or parts that are exceptionally difficult to source.
 
 ## Versions
 
@@ -31,7 +32,7 @@ This is a WLCSP49 package, 3.1x3.1mm, 0.4mm pitch chip.
 
 #### March 2024 order
 
-* 4-layer board
+* 4-layer board, non-HDI.
 * Trace/Space: 0.076mm (0.003")
 * Vias 0.25mm w/ 0.15mm hole
 * Via in pad was needed
@@ -42,9 +43,9 @@ This is a WLCSP49 package, 3.1x3.1mm, 0.4mm pitch chip.
 * Omitted all through hole components.
 * TODO: Actually make the board based on ST's recommendation.  (I rushed ordering it, so I might have missed something crucial and this board be a dud.)
 * TODO: Add a Tag-Connect to avoid the 10-pin connector.
-* TODO: (Not related to this project) Add a 24V to 3.3V SMPS
-* TODO: Try making this with 0.0035" traces, as that seems to be a threshold for JLC
-* Not all ball were able to be exposed in the fanout.  8/49 were left unconnected. A couple of those 8 could easily be brought out, but definitely not all 49 in this fab. See (#learnings) #1.
+* TODO: (Not related to this experiment) Add a 24V to 3.3V SMPS.
+* TODO: Try making this with 0.0035" traces, as that seems to be a cost-adder-threshold for JLC.
+* Not all balls were able to be exposed in the fanout.  In this design 8 of 49 were left unconnected. A couple of those 8 could easily be brought out, but definitely not all 49 in this fab. See (#learnings) #1.
 
 ## Learnings
 
